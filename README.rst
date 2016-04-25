@@ -20,7 +20,7 @@ This library pulls images out of [Google Images](https://images.google.com)
 search results and saves them to disk. The neat trick is *not*
 that it saves the images in the search results, instead it saves the
 **original source images** (e.g. high-res images) that the search results
- refers to.
+refers to.
 
 This is made possible by the
 [Chrome Remote Debugging API](https://developer.chrome.com/devtools/docs/debugger-protocol#remote)
@@ -30,7 +30,7 @@ the Chrome browser.
 Whence the name?
 ================
 
-**GID**ler: **G**oogle **I**mage **D**ownloader.
+Definition of **GID** ler: **G** oogle **I** mage **D** ownloader.
 
 Install
 =======
@@ -123,27 +123,27 @@ Future steps
 Currently, several things are hard-coded:
 
 * The "large" filter is automatically set. This is quite restrictive, and
-is probably not what you want all the time. This should be a CLI option*.
-If you peek in the source code, you'll see some documentation about all the
-possible settings; you can even specify width and height requirements. None
-of that is configurable yet though*.
+  is probably not what you want all the time. This should be a CLI option``*``.
+  If you peek in the source code, you'll see some documentation about all the
+  possible settings; you can even specify width and height requirements. None
+  of that is configurable yet though"\*".
 * If no `max` is given, all the images on the first page of results are
-fetched.  The code even forces scroll actions to the bottom of the page
-in order to get Chrome to load all 400.  This might not be what you want.
+  fetched.  The code even forces scroll actions to the bottom of the page
+  in order to get Chrome to load all 400.  This might not be what you want.
 * The images are saved into a new subfolder in the local folder. This should
-be a CLI option*
+  be a CLI option\*
 * The subfolder name is a slugified version of the query string, plus a
-small uuid (so that you can run the same query multiple times with no
-collisions)
+  small uuid (so that you can run the same query multiple times with no
+  collisions)
 * The image names are the *original* image names, prefixed also with a
-small uuid to avoid collisions in case multple images have the same filename.
+  small uuid to avoid collisions in case multple images have the same filename.
 * timeouts, and other applied pauses are all hardcoded. The pauses are
-largely to give Chrome a chance to complete the previous instruction. I
-tweaked these for my situation, but you may find longer pauses are necessary.
-* The work was done on OS X. I have *no idea** whether this will work on
-other platforms.
+  largely to give Chrome a chance to complete the previous instruction. I
+  tweaked these for my situation, but you may find longer pauses are necessary.
+* The work was done on OS X. I have *no idea*\* whether this will work on
+  other platforms.
 
-*PRs welcome.
+\*PRs welcome.
 
 
 But Selenium/ABC/XYZ already exists!
