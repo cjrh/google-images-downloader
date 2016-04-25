@@ -1,14 +1,15 @@
 # Start chrome like so:
-# open /Users/calebhattingh/Applications//Chromium.app --args -remote-debugging-port=6001
+# open /Users/calebhattingh/Applications/Chromium.app --args -remote-debugging-port=6001
 import time
 import json
-from chromote import Chromote
 from pprint import pprint, pformat
 from urllib.parse import urlparse, parse_qs
 from concurrent.futures import ThreadPoolExecutor
 import urllib.request
 import os.path
 from uuid import uuid4 as uid
+
+from chromote import Chromote
 from slugify import slugify
 
 
