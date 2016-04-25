@@ -11,6 +11,10 @@ import os.path
 from uuid import uuid4 as uid
 from slugify import slugify
 
+
+__version__ = '0.0.0'
+
+
 """
 More search examples:
 
@@ -21,6 +25,7 @@ https://www.google.com.au/search?biw=958&bih=911&tbm=isch&tbs=isz:l&q=guitarist&
 http://www.google.com/search?q=%22michael+jackson%22&tbm=isch&tbs=ic:color,isz:lt,islt:4mp,itp:face,isg:to
 
 """
+
 
 def enable_jquery(tab):
     code = ["var jq = document.createElement('script');",
@@ -36,7 +41,7 @@ def enable_jquery(tab):
 
 
 
-def search(port, query):
+def search(port, query, maxnum=None):
     """
     Large images: tbs=isz:l
     Medium images: tbs=isz:m
@@ -97,7 +102,7 @@ def search(port, query):
     urls = json.loads(out)['result']['result']['value']
     pprint(urls)
     imgurls = []
-    for url in urls.split(','):
+    for url in urls.split(',')[:maxnum]:
         try:
             parsed_url = urlparse(url)
             if not parsed_url.path:
@@ -139,12 +144,16 @@ def search(port, query):
     return imgurls, tab
 
 
-if __name__ == '__main__':
+def main():
     import argparse
     parser = argparse.ArgumentParser(description='Automate img search')
     parser.add_argument('-p', '--port', type=int, default=6001)
     parser.add_argument('-q', '--query', type=str)
+    parser.add_argument('--max', type=int, default=None)
     args = parser.parse_args()
     print(args.query)
-    out, tab = search(args.port, args.query)
+    out, tab = search(args.port, args.query, args.max)
 
+
+if __name__ == '__main__':
+    main()
