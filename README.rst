@@ -7,7 +7,8 @@ An experiment in browser automation
 Calling this **alpha quality** would be a kind and noble gesture.
 Don't use it for anything.
 Don't expect anything to work. If it destroys your computer you're
-on your own.
+on your own.  This is a hobby project, and in all likelihood will eventually
+be abandoned, perhaps even by next Tuesday.
 
 If you create issues, I'll expect you to help work on them.
 Pull requests, as always, are very welcome.
@@ -25,6 +26,11 @@ This is made possible by the
 [Chrome Remote Debugging API](https://developer.chrome.com/devtools/docs/debugger-protocol#remote)
 which also means you've discovered the first gotcha: this only works on
 the Chrome browser.
+
+Whence the name?
+================
+
+**GID**ler: **G**oogle **I**mage **D**ownloader.
 
 Install
 =======
@@ -55,7 +61,7 @@ right version of Python, and then pip install into that:
 
 
 Using and Abusing
-===============
+=================
 
 Step 1
 ------
