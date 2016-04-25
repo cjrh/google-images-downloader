@@ -1,4 +1,7 @@
-# google-images-downloader
+========================
+google-images-downloader
+========================
+
 An experiment in browser automation
 
 ⚠ Warning ⚠
@@ -16,14 +19,14 @@ Pull requests, as always, are very welcome.
 Introduction
 ============
 
-This library pulls images out of [Google Images](https://images.google.com)
+This library pulls images out of `Google Images <https://images.google.com>`_
 search results and saves them to disk. The neat trick is *not*
 that it saves the images in the search results, instead it saves the
 **original source images** (e.g. high-res images) that the search results
 refers to.
 
 This is made possible by the
-[Chrome Remote Debugging API](https://developer.chrome.com/devtools/docs/debugger-protocol#remote)
+`Chrome Remote Debugging API <https://developer.chrome.com/devtools/docs/debugger-protocol#remote>`_
 which also means you've discovered the first gotcha: this only works on
 the Chrome browser.
 
@@ -93,10 +96,10 @@ You can execute the module directly from the command-line:
 
 This:
 
-1. Starts up **gidler**...
-1. ...on port **9222** (this must match what we gave chrome)...
-1. ...returning no more than **5 images**...
-1. with a query string of "mandala"
+#. Starts up **gidler**...
+#. ...on port **9222** (this must match what we gave chrome)...
+#. ...returning no more than **5 images**...
+#. with a query string of "mandala"
 
 This query string is the same as what you would type into the Google Images
 search box, so e.g., this all works: "site:deviantart.com sketch portrait"
