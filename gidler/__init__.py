@@ -1,3 +1,15 @@
+"""
+
+gidler
+======
+
+An experiment in browser automation.  This script performs a
+Google Image search, and downloads all of the *original*, linked images
+from the search results.  The downloaded images are saves in a local folder.
+
+Run `python -m gidler -h` to see what options are available.
+
+"""
 # Start chrome like so:
 # open /Users/calebhattingh/Applications/Chromium.app --args -remote-debugging-port=6001
 import time
