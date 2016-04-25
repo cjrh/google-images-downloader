@@ -25,7 +25,7 @@ from chromote import Chromote
 from slugify import slugify
 
 
-__version__ = '0.0.0'
+__version__ = '0.0.1'
 
 
 """
