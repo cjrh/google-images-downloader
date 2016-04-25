@@ -45,8 +45,10 @@ The usual will work, but with caveats:
 The caveats are that you're *probably* going to need **Python >= 3.5** for this.
 I don't have a lot of free time for hobby projects, and they're how I
 experiment with new Python features.  It is an incredible amount of work to
-make a Python package that works on everything, and I just don't have the
-time and/or energy. *If you want it to work on 2.7, and you provide a working PR, I will
+make a Python package that works on everything (I've done it for other projects),
+and I just don't have the
+time and/or energy. *If you want it to work on 2.7, and you provide a working
+PR, I will
 very likely merge that in*. I just don't have time to do it myself.
 
 **However**: you don't actually need to do all that work. Just use
