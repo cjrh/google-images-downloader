@@ -80,7 +80,8 @@ def search(port, query, maxnum=None):
     tab = chrome.tabs[0]
     flags = dict(
             tbm='isch',
-            tbs='ic:color,isz:l',
+            # tbs='ic:color,isz:l',
+            tbs='isz:lt,islt:svga',
             )
     tmpl = 'http://www.google.com/search?q={query}&{flags}'
     search_url = tmpl.format(
