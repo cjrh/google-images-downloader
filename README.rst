@@ -1,20 +1,22 @@
-========================
-google-images-downloader
-========================
+.. raw:: html
+
+    <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
+    <style>
+    .logo {
+        font-family: 'Shadows Into Light Two', cursive;
+        font-size: 3rem;
+    }
+
+    p, ul, ol {
+        font-family: 'Shadows Into Light Two', cursive;
+        font-size: 1.2rem;
+    }
+    </style>
+    <p class="logo">
+    gidler - Google Images downloader
+    </p>
 
 An experiment in browser automation
-
-⚠ Warning ⚠
-===========
-
-Calling this **alpha quality** would be a kind and noble gesture.
-Don't use it for anything.
-Don't expect anything to work. If it destroys your computer you're
-on your own.  This is a hobby project, and in all likelihood will eventually
-be abandoned, perhaps even by next Tuesday.
-
-If you create issues, I'll expect you to help work on them.
-Pull requests, as always, are very welcome.
 
 Introduction
 ============
@@ -30,10 +32,12 @@ This is made possible by the
 which also means you've discovered the first gotcha: this only works on
 the Chrome browser.
 
-Whence the name?
-================
+What does "gidler" mean?
+========================
 
-Definition of **GID** ler: **G** oogle **I** mage **D** ownloader.
+.. raw:: html
+
+    <p>Definition of <strong>GID</strong>ler: <strong>G</strong>oogle <strong>I</strong>mages <strong>D</strong>downloader.
 
 Install
 =======
