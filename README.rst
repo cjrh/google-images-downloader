@@ -1,20 +1,6 @@
-.. raw:: html
-
-    <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
-    <style>
-    .logo {
-        font-family: 'Shadows Into Light Two', cursive;
-        font-size: 3rem;
-    }
-
-    p, ul, ol {
-        font-family: 'Shadows Into Light Two', cursive;
-        font-size: 1.2rem;
-    }
-    </style>
-    <p class="logo">
-    gidler - Google Images downloader
-    </p>
+------
+GIDler
+------
 
 An experiment in browser automation
 
@@ -35,9 +21,7 @@ the Chrome browser.
 What does "gidler" mean?
 ========================
 
-.. raw:: html
-
-    <p>Definition of <strong>GID</strong>ler: <strong>G</strong>oogle <strong>I</strong>mages <strong>D</strong>downloader.
+It's shortcut for Google Images Downloader.
 
 Install
 =======
