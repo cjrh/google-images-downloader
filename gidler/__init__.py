@@ -22,10 +22,10 @@ import os.path
 from uuid import uuid4 as uid
 
 from chromote import Chromote
-from slugify import slugify
+from unicode_slugify import slugify
 
 
-__version__ = '0.0.2'
+__version__ = '0.0.3'
 
 
 """
